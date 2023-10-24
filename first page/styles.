@@ -1,0 +1,149 @@
+body
+{
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+.animated 
+{
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@keyframes fadeInDown
+{ 0%
+  {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100%
+  {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp
+{ 0%
+  {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100%
+  {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn
+{ 0%
+  {
+    opacity: 0;
+  }
+  100%
+  {
+    opacity: 1;
+  }
+}
+.hover-glow
+{
+  width: 500px;
+  border-radius: 250px;
+}
+.hover-glow:hover
+{
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+.header-div
+{
+  background-color: #333;
+
+  text-align: center;
+  padding: 20px;
+  animation: fadeIn 1s ease-in-out;
+  height: 5px;
+  display: flex;
+
+}
+.left-side
+{
+
+  min-height: 100vh;
+  width: 50%;
+  float: left;
+}
+.right-side
+{
+  min-height: 100vh;
+  width: 50%;
+  float: right;
+  margin-top: 70px;
+}
+.centered
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+h1
+{
+  font-size: 36px;
+  margin: 0;
+  color: #fff;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  text-decoration: underline;
+}
+
+main
+{
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: black;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0. 0.2);
+  animation: fadeIn 1s ease-in-out;
+}
+#image
+{
+  text-align: center;
+}
+img
+{
+  max-width: 100%;
+  border: 2px solid #333;
+  border-radius: 5px;
+  animation: fadeIn 1s ease-in-out;
+}
+footer
+{
+  text-align: center;
+  padding: 5px;
+  color: white;
+  animation: fadeIn 1s ease-in-out;
+}
+#tribute-info
+{
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+h2
+{
+  font-size: 24px;
+  color: white;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+  text-decoration: underline;
+}
+p
+{
+  font-size: 16px;
+  line-height: 1.6;
+  animation: fadeIn 1s ease-in-out;
+  color: white;
+}
